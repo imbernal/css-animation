@@ -1,0 +1,105 @@
+body{
+  background-image: url("../img/fondo.png");
+  height: 100vh;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#heart{
+
+  margin-left: 127px;
+  position: absolute;
+  margin-top: -36px;
+  font-size: 35px;
+  color: #e95959;
+
+}
+/*.moveBird{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+
+  animation: moveDiv 8s linear infinite;
+}
+.bird{
+  background-image: url('../img/birds2.png');
+  width: 22%;
+  height: 150px;
+  animation: birdFly 1s steps(14,end) infinite;
+}*/
+
+
+.manContainer{
+  animation: movDivMam 9s linear infinite;
+  position: absolute;
+  bottom: 1%;
+  width: 12%;
+  height: 218px;
+}
+
+.man{
+  height: 313px;
+  width: 183px;
+  position: absolute;
+  bottom: 1%;
+  animation: movMan 2s steps(8,end) infinite;
+  background-image: url('../img/man.png');
+  background-repeat: no-repeat;
+}
+
+.womanContainer{
+  animation: movDivWoman 9s linear infinite;
+  position: absolute;
+  bottom: 1%;
+  width: 12%;
+  height: 218px;
+}
+
+.woman{
+  height: 313px;
+  width: 183px;
+  position: absolute;
+  bottom: 1%;
+  animation: movMan 2s steps(7,end) infinite;
+  background-image: url('../img/woman.png');
+  background-repeat: no-repeat;
+}
+
+#heart{
+  animation: heartMove 1s infinite;
+}
+
+
+
+@keyframes movDivMam {
+  0%{ right: 1572px}
+  100%{ right: 0px}
+}
+
+@keyframes movDivWoman {
+  0%{ right: 1472px}
+  100%{ right: -325px}
+}
+
+@keyframes movMan {
+
+  0% { background-position: 0px }
+  100% { background-position: -1472px }
+}
+
+@keyframes birdFly {
+
+  0%{ background-position: 0px; }
+  100%{ background-position: 978px;}
+
+}
+
+@keyframes moveDiv {
+  0% {left: 1200px; }
+  100% { left: -400px;}
+}
+
+@keyframes heartMove {
+  0%{ opacity: 1}
+  100%{ opacity: 0}
+}
